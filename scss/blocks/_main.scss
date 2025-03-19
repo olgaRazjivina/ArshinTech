@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+
+  @media (max-device-width: $tablet-width) {
+    row-gap: 50px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    row-gap: 30px;
+  }
+}

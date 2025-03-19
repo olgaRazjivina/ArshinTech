@@ -1,0 +1,50 @@
+.service-card {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 11px 10px;
+  background-color: $accent-second-color;
+  color: $light-color;
+  background-repeat: no-repeat;
+  background-position: top 10px right 20px;
+
+  @media (max-device-width: $mobile-width) {
+    min-height: 186px;
+  }
+
+  &--large {
+    min-height: 230px;
+
+    @media (max-device-width: $tablet-width) {
+      min-height: 218px;
+    }
+
+    @media (max-device-width: $mobile-width) {
+      min-height: 186px;
+    }
+  }
+}
+
+.service-card--intercom-system {
+  background-image: url("./../img/services/intercom-system-icon.svg");
+}
+
+.service-card--smart-locks {
+  background-image: url("./../img/services/smart-locks-icon.svg");
+}
+
+.service-card--video {
+  background-image: url("./../img/services/video-icon.svg");
+}
+
+.service-card--identification {
+  background-image: url("./../img/services/identification-icon.svg");
+}
+
+.service-card--video-for-special {
+  background-image: url("./../img/services/video-for-special-icon.svg");
+}
+
+.service-card__text {
+  margin-top: auto;
+}

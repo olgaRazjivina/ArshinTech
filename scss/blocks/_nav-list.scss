@@ -1,0 +1,30 @@
+.nav-list {
+  display: flex;
+  gap: 15px;
+  max-width: 500px;
+  flex-wrap: wrap;
+
+  @media (max-device-width: $mobile-width) {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+  }
+}
+
+.nav-list__link {
+  padding: 5px 15px;
+  color: inherit;
+  background-color: $light-second-color;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus {
+  color: $light-color;
+  background-color: $accent-second-color;
+}
+
+.nav-list__link:active {
+  background-color: $accent-color;
+}

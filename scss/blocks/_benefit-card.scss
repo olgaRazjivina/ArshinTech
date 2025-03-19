@@ -1,0 +1,39 @@
+.benefit-card {
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: $accent-second-color;
+  color: $light-color;
+
+  @media (max-device-width: $tablet-width) {
+    min-height: 268px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    min-height: 186px;
+  }
+}
+
+.benefit-card__img {
+  @media (max-device-width: $mobile-width) {
+    width: 45px;
+    height: 45px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.benefit-card__text {
+  font-size: 18px;
+  font-weight: 300;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 16px;
+  }
+}

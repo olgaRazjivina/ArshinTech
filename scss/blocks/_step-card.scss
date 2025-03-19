@@ -1,0 +1,26 @@
+.step-card {
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0 10px 10px;
+  background-color: $accent-color;
+  color: $light-color;
+  font-size: 18px;
+  font-weight: 500;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.step-card__text {
+  margin-top: auto;
+}
+
+.step-card__img {
+  @media (max-device-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
+}

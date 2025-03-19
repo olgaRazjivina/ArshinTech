@@ -1,0 +1,18 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.checkbox__control-mark {
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.checkbox__control:checked + .checkbox__control-mark {
+  background-image: url("./../img/icons/tick.svg");
+}

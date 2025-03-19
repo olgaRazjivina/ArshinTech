@@ -1,0 +1,31 @@
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  grid-template-rows: min-content min-content;
+  gap: 40px;
+
+  @media (max-device-width: $tablet-width) {
+    grid-template-columns: 1fr 330px;
+    gap: 20px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero__img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+
+  @media (max-device-width: $mobile-width) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.hero__img-photo {
+  @media (max-device-width: $mobile-width) {
+    width: 100%;
+  }
+}

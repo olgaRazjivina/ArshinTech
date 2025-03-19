@@ -1,0 +1,32 @@
+.promo__inner {
+  padding: 21px 20px;
+  background-color: $light-color;
+  color: $dark-color;
+  font-size: 18px;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.promo__top {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.promo__desc {
+  font-family: $third-family, sans-serif;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+
+  @media (max-device-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+}

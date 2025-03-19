@@ -1,0 +1,12 @@
+.mobile-nav-btn {
+  display: none;
+
+  @media (max-device-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    z-index: 20;
+  }
+}

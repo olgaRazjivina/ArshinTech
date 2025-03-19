@@ -1,0 +1,42 @@
+.promo-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 46px 10px 10px;
+  background-color: $accent-color;
+  color: $light-color;
+  font-size: 22px;
+  background-repeat: no-repeat;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.promo-card--camera {
+  background-image: url("./../img/promo/promo-card-icon-01.svg");
+  background-position: top 13px right 46px;
+
+  @media (max-device-width: $tablet-width) {
+    background-size: 112px 112px;
+    background-position: top 18px right 36px;
+  }
+}
+
+.promo-card--intercom-system {
+  background-image: url("./../img/promo/promo-card-icon-02.svg");
+  background-position: top 3px right 44px;
+
+  @media (max-device-width: $tablet-width) {
+    background-size: 112px 112px;
+    background-position: top 15px right 15px;
+  }
+}
+
+.promo-card__text {
+  margin-top: auto;
+}

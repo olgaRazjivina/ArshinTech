@@ -1,0 +1,14 @@
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @media (max-device-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

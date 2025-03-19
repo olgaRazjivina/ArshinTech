@@ -1,0 +1,53 @@
+.slogan {
+  position: relative;
+  padding: 19px 38px 23px 20px;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.slogan::before {
+  content: "";
+  position: absolute;
+  width: 113px;
+  height: 109px;
+  background-image: url("./../img/hero/hero-icon-01.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 13px;
+  right: 23px;
+
+  @media (max-device-width: $tablet-width) {
+    width: 88px;
+    height: 83px;
+    top: 7px;
+    right: 15px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    width: 60px;
+    height: 52px;
+  }
+}
+
+.slogan__tags {
+  margin-bottom: 42px;
+
+  @media (max-device-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.slogan__title {
+  font-family: $second-family;
+  margin-bottom: 20px;
+}
+
+.slogan__desc {
+  font-size: 18px;
+  font-weight: 600;
+  color: $dark-second-color;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 14px;
+  }
+}

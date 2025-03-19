@@ -1,0 +1,27 @@
+.phone {
+  font-size: 18px;
+  color: $dark-color;
+  font-weight: 700;
+  transition: all 0.2s ease-in;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  &--large {
+    font-size: 20px;
+
+    @media (max-device-width: $tablet-width) {
+      font-size: 18px;
+    }
+  }
+}
+
+.phone:hover,
+.phone:focus {
+  color: $accent-second-color;
+}
+
+.phone:active {
+  color: $accent-color;
+}

@@ -1,0 +1,10 @@
+.textarea {
+  padding: 20px;
+  background-color: $light-color;
+  border-radius: 20px;
+  color: $accent-second-color;
+
+  @media (max-device-width: $mobile-width) {
+    padding: 10px;
+  }
+}

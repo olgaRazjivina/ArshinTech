@@ -1,0 +1,19 @@
+.tag {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 30px;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 12px;
+  }
+
+  &--light-theme {
+    background-color: $light-color;
+    color: $accent-color;
+  }
+
+  &--dark-theme {
+    background-color: $accent-second-color;
+    color: $light-color;
+  }
+}

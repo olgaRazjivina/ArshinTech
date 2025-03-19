@@ -1,0 +1,12 @@
+.input {
+  padding: 10px;
+  background-color: $light-color;
+  color: $dark-support-color;
+  border-radius: 20px;
+}
+
+.input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: $accent-second-color;
+}

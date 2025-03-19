@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.color-accent {
+  color: $accent-color;
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.border-around {
+  border-radius: 20px;
+
+  @media (max-device-width: $mobile-width) {
+    border-radius: 10px;
+  }
+}

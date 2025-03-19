@@ -1,0 +1,59 @@
+.button-request {
+  position: relative;
+  padding: 9px 55px 9px 10px;
+  background-color: $light-color;
+  color: $dark-support-color;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+
+  @media (max-device-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.button-request__icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $dark-support-color;
+  transition: all 0.2s ease-in;
+
+  @media (max-device-width: $tablet-width) {
+    right: 7px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.button-request__icon::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-image: url("./../img/icons/arrow-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-request:hover .button-request__icon {
+  background-color: $light-color;
+}
+
+.button-request:hover .button-request__icon::before {
+  background-image: url("./../img/icons/arrow-dark.svg");
+}
+
+.button-request:active {
+  background-color: $dark-support-color;
+  color: $light-color;
+}

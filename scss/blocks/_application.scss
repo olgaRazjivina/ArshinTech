@@ -1,0 +1,32 @@
+.application__header {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $light-color;
+
+  @media (max-device-width: $mobile-width) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.application__title {
+  max-width: 478px;
+}
+
+.application__step-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @media (max-device-width: $tablet-width) {
+    gap: 15px;
+  }
+
+  @media (max-device-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    align-self: stretch;
+  }
+}

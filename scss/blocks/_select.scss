@@ -1,0 +1,17 @@
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 20px;
+  background-color: $light-color;
+  border: none;
+  border-radius: 20px;
+  background-image: url("./../img/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: top 17px right 6px;
+  color: $accent-second-color;
+
+  @media (max-device-width: $tablet-width) {
+    background-position: top 10px right 6px;
+  }
+}

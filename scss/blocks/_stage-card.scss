@@ -1,0 +1,18 @@
+.stage-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  border: 1px solid $light-color;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (max-device-width: $tablet-width) {
+    width: 220px;
+    height: 220px;
+    font-size: 14px;
+  }
+}
